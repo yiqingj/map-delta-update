@@ -12,8 +12,10 @@ usage = 'delta-gen.py [config-file]'
 def create_command():
     if len(sys.argv) != 2:
         print usage
-        return
-    file_name = open(sys.argv[1], 'r')
+        print 'Using default config file: area-list.json'
+        file_name = 'area-list.json'
+    else:
+        file_name = open(sys.argv[1], 'r')
     config = json.load(file_name)
     count = len(config)
     command = '../../bin/osmosis --rri workingDirectory=. --simc --tc %d' % count
