@@ -4,13 +4,13 @@
         "bound": {"top-left": "37.402969,-122.066646,",
                   "bottom-right": "37.330555,-121.978231"
         },
-        "file": "sunnyvale"
+        "folder": "sunnyvale"
     },
     {
         "name": "mountain view",
         "bound": {"top-left": "37.402969,-122.066646,",
                   "bottom-right": "37.330555,-121.978231"
         },
-        "file": "mountainview"
+        "folder": "mountainview"
     }
 ]

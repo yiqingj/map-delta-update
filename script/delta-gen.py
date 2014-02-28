@@ -24,7 +24,7 @@ def create_command():
         top_left = area["bound"]["top-left"].split(",")
         bottom_right = area["bound"]["bottom-right"].split(",")
         filter_cmd = ' --bounding-box-change top=%s left=%s bottom=%s right=%s --write-replication workingDirectory=%s' \
-                     % (top_left[0], top_left[1], bottom_right[0], bottom_right[1], area['file'])
+                     % (top_left[0], top_left[1], bottom_right[0], bottom_right[1], area['folder'])
         command += filter_cmd
     print command
 
